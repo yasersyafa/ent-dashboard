@@ -3,6 +3,9 @@ import HomePage from '@/pages/home/home-page'
 import DashboardPage from '@/pages/admin/dashboard-page'
 import DashboardLayout from '@/layouts/dashboard-layout'
 
+// auth pages
+import LoginPage from './pages/auth/login-page'
+
 // member pages
 import MemberListPage from '@/pages/admin/members/index'
 import MemberDetailPage from '@/pages/admin/members/show'
@@ -16,6 +19,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<HomePage />} />
+      <Route path='/login' element={<LoginPage />} />
       <Route path='/dashboard' element={<DashboardLayout />}>
         <Route path='/dashboard' element={<DashboardPage />} />
 
